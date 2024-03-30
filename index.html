@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -18,38 +19,39 @@
 
 
         <div class="converter-container">
-            <div>
+            <form>
                 <label for="left-box">Amount</label>
                 <div class="converter-box">
-                    <div><input type="number" id="amount" placeholder="Enter amount:"></div>
-
-                    <select id="country-select">
-                        <option value="USA">&#127482;&#127480; USA</option>
-                        <option value="CAD">&#127464;&#127462; CAD</option>
-                    </select>
-
-
+                    <input type="number" id="usdamount" min=" 0" step="0.01">
+                    <div class="country">
+                        <img src="usa.jpg" alt="US">
+                        <span>USD</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
                 </div>
-            </div>
+
+            </form>
             <div class="conversion-sign">&#8644;</div>
-            <div>
+            <form>
                 <label for="right-box">Converted to</label>
                 <div class="converter-box">
-                    <div><input type="number" id="amount" placeholder="Enter amount:"></div>
-
-                    <select id="country-select">
-                        <option value="USA">&#127482;&#127480; USA</option>
-                        <option value="CAD">&#127464;&#127462; CAD</option>
-                    </select>
-
-
+                    <input type="number" id="cadamount" min=" 0" step="0.01">
+                    <div class="country">
+                        <img src="cad.png" alt="CA">
+                        <span>CAD</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
                 </div>
-            </div>
 
+            </form>
 
+        </div>
+        <div class="submit-button">
+            <button class="btn" onclick="convertCurrency()">Convert</button>
         </div>
 
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

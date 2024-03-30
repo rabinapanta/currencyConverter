@@ -1,58 +1,61 @@
-.main{
+.main {
     margin: 50px auto;
     width: 800px;
 }
-.heading{
-    padding: 1px;
+
+.heading {
+    padding: 10px; 
     text-align: left;
-    background-color: rgb(28, 28, 110);
+    background-color: #2e4776;
     color: white;
 }
-.converter-box{
+.converter-box {
     display: flex;
     align-items: center;
+    height: 50px;
 }
-.converter-container{
+
+.country {
+    display: flex;
+    align-items: center;
+    height: 50px; 
+    background-color: #2e4776;
+    color: white;
+}
+
+.converter-container {
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
 
-
-/* Style the select box */
-select {
-    padding: 5px;
-    font-size: 16px;
-    background-color:rgb(28, 28, 110) ;
-    color: white;
-
-}
-#country-select{
-    width: 35%;
-    float: right;
+input[type="number"]::placeholder {
+    font-size: 14px;
+    width: 50%;
 }
 
-
-/* Style the options */
-option {
-    background-color:rgb(28, 28, 110);
-    background-size: 30px;
-    background-position: 10px;
-    color: white;
-    padding-left: 40px; /* adjust as needed */
+img {
+    max-width: 30px; 
+    height: auto;
 }
 
-/* Define specific images for each option */
-option[value="USA"] {
-    background-image: url('https://www.countryflags.io/US/flat/64.png');
-    background-repeat: no-repeat;
-}
-
-option[value="CAD"] {
-    background-image: url('https://www.countryflags.io/CA/flat/64.png');
-    background-repeat: no-repeat;
-}
 .conversion-sign {
     font-size: 2rem;
     margin: 0 10px;
+    padding: 15px;
+    color: rgb(28, 211, 224);
+}
+
+.submit-button {
+    text-align: right;
+}
+
+.btn {
+    background-color: #2e4776;
+    color: white;
+    cursor: pointer;
+    border-radius: 48%;
+    font-size: 20px;
+    padding: 15px 25px;
+    border: none;
 }
