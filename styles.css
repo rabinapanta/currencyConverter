@@ -1,0 +1,51 @@
+.main{
+    margin: 50px auto;
+    width: 800px;
+}
+.heading{
+    padding: 1px;
+    text-align: left;
+    background-color: rgb(28, 28, 110);
+    color: white;
+}
+.converter-box{
+    display: flex;
+}
+
+
+/* Style the select box */
+select {
+    padding: 5px;
+    font-size: 16px;
+    background-color:rgb(28, 28, 110) ;
+    color: white;
+
+}
+#country-select{
+    width: 15%;
+    float: right;
+}
+.placeholder{
+    width: 50%;
+    float: left;
+}
+
+/* Style the options */
+option {
+    background-color:rgb(28, 28, 110);
+    background-size: 30px;
+    background-position: 10px;
+    color: white;
+    padding-left: 40px; /* adjust as needed */
+}
+
+/* Define specific images for each option */
+option[value="USA"] {
+    background-image: url('https://www.countryflags.io/US/flat/64.png');
+    background-repeat: no-repeat;
+}
+
+option[value="CAD"] {
+    background-image: url('https://www.countryflags.io/CA/flat/64.png');
+    background-repeat: no-repeat;
+}
