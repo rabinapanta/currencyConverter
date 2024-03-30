@@ -10,6 +10,12 @@
 }
 .converter-box{
     display: flex;
+    align-items: center;
+}
+.converter-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 
@@ -22,13 +28,10 @@ select {
 
 }
 #country-select{
-    width: 15%;
+    width: 35%;
     float: right;
 }
-.placeholder{
-    width: 50%;
-    float: left;
-}
+
 
 /* Style the options */
 option {
@@ -48,4 +51,8 @@ option[value="USA"] {
 option[value="CAD"] {
     background-image: url('https://www.countryflags.io/CA/flat/64.png');
     background-repeat: no-repeat;
+}
+.conversion-sign {
+    font-size: 2rem;
+    margin: 0 10px;
 }
