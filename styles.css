@@ -26,6 +26,9 @@ input{
     align-items: center;
     height: 50px;
 }
+i{
+    padding: 5px;
+}
 
 
 /* Country container */
@@ -60,7 +63,7 @@ img {
 
 /* Submit button styling */
 .submit-button {
-    text-align: right;
+    text-align: center;
 }
 
 .btn {
