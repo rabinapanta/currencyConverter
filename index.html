@@ -10,47 +10,51 @@
 </head>
 
 <body>
+    <!-- Main container -->
     <div class="main">
+        <!-- Heading section -->
         <div class="heading">
             <h1>US Dollar to Canadian Dollar</h1>
-            <p>Convert USD to CAD at the real exchange rate</p>
+            <h3>Convert USD to CAD at the real exchange rate</h3>
         </div>
 
-
-
+        <!-- Converter Codes -->
         <div class="converter-container">
-            <form>
+            <div>
                 <label for="left-box">Amount</label>
                 <div class="converter-box">
-                    <input type="number" id="usdamount" min=" 0" step="0.01">
+                    <input type="number" id="usdamount" min="0" step="0.01">
                     <div class="country">
                         <img src="usa.jpg" alt="US">
                         <span>USD</span>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                 </div>
+            </div>
 
-            </form>
+            <!-- Conversion sign -->
             <div class="conversion-sign">&#8644;</div>
-            <form>
+
+            <div>
                 <label for="right-box">Converted to</label>
                 <div class="converter-box">
-                    <input type="number" id="cadamount" min=" 0" step="0.01">
+                    <input type="number" id="cadamount" min="0" step="0.01">
                     <div class="country">
                         <img src="cad.png" alt="CA">
                         <span>CAD</span>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                 </div>
-
-            </form>
-
+            </div>
         </div>
+
+        <!-- Submit button -->
         <div class="submit-button">
             <button class="btn" onclick="convertCurrency()">Convert</button>
         </div>
-
     </div>
+
+    <!-- JavaScript file -->
     <script src="script.js"></script>
 </body>
 

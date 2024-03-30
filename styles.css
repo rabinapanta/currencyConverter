@@ -1,44 +1,56 @@
+
 .main {
     margin: 50px auto;
-    width: 800px;
+    width: 800px; /* Set a fixed width for the main container */
 }
 
+/* Heading section */
 .heading {
-    padding: 10px; 
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     background-color: #2e4776;
     color: white;
 }
+/* style for label */
+label{
+    color: rgb(101, 105, 136);
+}
+/* style for input field */
+input{
+    height: 90%;
+}
+/* Converter box */
 .converter-box {
     display: flex;
     align-items: center;
     height: 50px;
 }
 
+
+/* Country container */
 .country {
     display: flex;
     align-items: center;
-    height: 50px; 
+    height: 50px;
     background-color: #2e4776;
     color: white;
 }
 
+/* Converter container */
 .converter-container {
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
 
-input[type="number"]::placeholder {
-    font-size: 14px;
-    width: 50%;
-}
-
+/* Image styling */
 img {
-    max-width: 30px; 
+    max-width: 30px;
     height: auto;
 }
 
+/* Conversion sign styling */
 .conversion-sign {
     font-size: 2rem;
     margin: 0 10px;
@@ -46,6 +58,7 @@ img {
     color: rgb(28, 211, 224);
 }
 
+/* Submit button styling */
 .submit-button {
     text-align: right;
 }
@@ -58,4 +71,33 @@ img {
     font-size: 20px;
     padding: 15px 25px;
     border: none;
+    box-shadow: inset 0px 2px 2px 0px white; /* White shadow at the top */
+    outline: 1px solid black; /* black outline around the button */
+}
+
+/* Media queries for responsive design */
+@media only screen and (max-width: 768px) {
+    .main {
+        width: 100%; /* Set width to 100% for smaller screens */
+    }
+    .converter-container {
+        flex-direction: column; /* Change flex direction to column for smaller screens */
+        align-items: center; /* Center align items */
+    }
+    .submit-button {
+        text-align: center; /* Center align the submit button */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Additional styles for smaller screens */
+    .heading h1 {
+        font-size: 1.5rem; /* Reduce font size for heading */
+    }
+    .heading p {
+        font-size: 0.8rem; /* Reduce font size for paragraph */
+    }
+    input[type="number"] {
+        width: 100%; /* Set input width to 100% */
+    }
 }
