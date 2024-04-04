@@ -1,7 +1,12 @@
+body{
+    background-color: rgb(234, 237, 237);
+}
 
 .main {
     margin: 50px auto;
     width: 800px; /* Set a fixed width for the main container */
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* Heading section */
